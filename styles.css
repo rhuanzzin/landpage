@@ -25,13 +25,28 @@ nav{
     justify-content: center;
 }
 
+.flex{
+    display: flex;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
 .header{
     height: 55px;
 }
-
-.cad{
-    display:flex;
+.logo{
+    font-weight: 900;
+    font-size:50px;
+    margin:-30px;
+    color:rgb(68, 226, 139);
 }
+
+.botaoheader{
+    color: rgb(68, 233, 90);
+    font-size: 16pt;
+}
+
 .container{
     display: flex;
     flex-direction: column;
@@ -58,26 +73,27 @@ nav{
     font-size: 35pt;
     color:rgb(0, 0, 0, 0.8);
 }
-
+.botoes{
+    margin-top:30px;
+    max-height: 50px;
+    font-size: 40pt;
+}
 .botaobanner{
     color:  rgb(68, 226, 139);
-    line-height: 50pt;
-    font-size: 50pt;
-    font-weight: 900;
-    padding:0px 10px 5px 10px;
+    padding:5px 10px;
     text-align: center;
     transition: 0.5s;
-    border: solid white;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, white, whitesmoke);
 }   
 
 .botaobanner:hover{
-    color: rgb(68, 226, 139);
-    font-size: 60pt;
-    transition: 0.5s;
+    transition: 0.3s;
+    font-size: 45pt;
+    color: white;
+    background-image: linear-gradient(to bottom right, rgb(68, 226, 139), rgb(21, 231, 49) );
     text-shadow: 0px 0px 10px rgb(0, 0, 0, 0.1);
-    padding:20px;
-    border-bottom: solid rgb(68, 226, 139);
-    border-width: 5px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
 }
 
 .about{
@@ -100,6 +116,7 @@ nav{
     height: 800px;
     width: 100%;
 }
+
 .card{
     display:flex;
     flex-direction: column;
@@ -134,4 +151,43 @@ nav{
     text-align: start;
     font-size: 14pt;
     width: 150px;
+}
+
+.how{
+    display:flex;
+    justify-content: space-evenly ;
+    width: 100%;
+    margin-top:150px;
+    background-image: linear-gradient(to bottom right, rgb(68, 226, 139), rgb(68, 233, 90) );
+}
+
+.howtext{
+    margin-top:100px;
+    text-align: center;
+    color:white;
+}
+.black {
+    color: rgb(0, 0, 0, 0.8);
+}
+
+.how-box{
+    display:flex;
+    justify-content: space-evenly ;
+    margin:100px;
+    width: 100%;
+}
+
+.howtext > h1{
+    font-size: 62pt;
+    line-height: 45pt;
+}
+.howtext > h2 {
+    margin-top:30px;
+    color: rgb(0, 0, 0, 0.6);
+    line-height: 20pt;
+}
+.howtext > h3 {
+    font-size: 26pt;
+    font-weight: 600;
+    color: white;
 }

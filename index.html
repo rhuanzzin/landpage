@@ -5,18 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./styles.css">
     <link href="https://fonts.googleapis.com/css?family=Catamaran:400,600,800,900&display=swap" rel="stylesheet">    <title>Landpage</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="header">
         <nav>
             <ul>
-                <a href="/">
-                    Ree
+                <a class="logo" href="/">
+                    ree
                 </a>
-                <a href="/">
+                <a class="botaoheader" href="/">
                     Faça uma Doação
                 </a>
-                <div class="cad">
+                <div class="flex">
                     
                     <a href="/">
                         Cadastro
@@ -30,11 +31,56 @@
     </header>
 
     <section class="container">
-        <img class="banner" src="./src/img/undraw_nature_benefits_mr3v (1).svg">
-        <h1 class="textobanner"> A diferença está <br> nas suas mãos. </h1>
-        <a class="botaobanner" href="/"> Faça parte! </a>
+        <img data-aos="fade-down" class="banner" src="./src/img/conexão.svg">
+        <h1 data-aos="fade-down" class="textobanner"> A diferença está <br> nas suas mãos. </h1>
+        <div data-aos="fade-down" class="botoes">
+            <a class="botaobanner" href="/"> Entenda! </a>
+            <a class="botaobanner" href="/"> Faça parte! </a>
         </div>
-            
+
+        <section class="how">
+            <img data-aos="fade-right" class="banner" src="./src/img/troca.svg">
+            <div data-aos="fade-left"class= "howtext">
+                <h1> Como funciona? </h1>
+                <h3> Reunir, Reutilizar, Reconectar  </h3>
+            </div>
+        </section>
+
+        <section class="how-box">
+            <div data-aos="fade-right" class="howtext black ">
+                <h1>    Reunir  </h1>
+                <h2>    Gentileza gera gentileza, <br> 
+                        encontre doadores de produtos tecnológicos <br>
+                        ou então doe você mesmo!
+                </h2>
+            </div>
+            <img class="banner" src="./src/img/2-sentados.svg">
+        </section>
+
+        <section class="how-box">
+            <img class="banner" src="./src/img/progresso.svg">
+
+            <div data-aos="fade-left" class="howtext black ">
+                <h1>    Reutilizar  </h1>
+                <h2>    Não importa o estado do seu item,<br>
+                        Doe o que não usa mais para pessoas que precisam e<br>
+                        ajude na redução de lixo eletrônico.<br>
+                        Pode ser útil para alguem!
+                </h2>
+            </div>
+        </section>
+
+        <section class="how-box">
+            <div data-aos="fade-right"class="howtext black ">
+                <h1>    Reconectar </h1>
+                <h2>    Transforme a realidade a sua volta!<br>
+                        Melhore a qualidade de vida da sua Sociedade.<br>
+                        Se reconecte com o mundo! 
+                </h2>
+            </div>
+            <img class="banner" src="./src/img/troca 2.svg">
+        </section>
+
         <section class="about">
             <h1 class="titleabout">A equipe ree</h1>
             <div class="abouttext">
@@ -66,5 +112,11 @@
             </div>
         </section>
     </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 </body>
 </html>
