@@ -89,7 +89,9 @@ nav{
     display:flex;
     justify-content: center;
 }
-
+h1,h2,h3,h4{
+    color: rgba(0, 0, 0, 0.8)
+}
 .flex{
     display: flex;
 }
@@ -172,14 +174,15 @@ nav{
     text-align: center;
     transition: 0.3s;
 }
+.botaobanner:hover{
+    transition: 0.3s;
+    color:rgb(43, 195, 55);
+}
 
 /* ---------------------------------COMO FUNCIONA-------------------------------
 ----------------------------------------BANNER---------------------------------- */
 
-.botaobanner :hover{
-    transition: 0.3s;
-    color:rgb(235, 54, 54);
-}
+
 
 .how{
     display:flex;
@@ -224,8 +227,24 @@ nav{
     font-weight: 600;
     color: white;
 }
+/* -----------------------------------------PROBLEMA DO LIXO-------------------------------- */
 
 
+.consci{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    padding: 10px;
+    height: 1400px;
+    width:85%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+    text-align: start;
+}
+.consci > h1{
+    font-size: 50pt;
+    font-weight: 900;
+}
 /* -----------------------------------------SOBRE----------------------------------------- */
 
 
