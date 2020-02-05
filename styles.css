@@ -4,7 +4,9 @@
     list-style: none;
     font-family: 'Catamaran', sans-serif;
 }
-
+body{
+    max-width: 1365px;
+}
 ul{
     display:flex;
     margin-top:15px;
@@ -14,6 +16,7 @@ ul{
 }
 
 a{
+    cursor: pointer;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.8);
     margin: 0px 10px 0px 10px;
@@ -46,25 +49,33 @@ nav{
     color: rgb(68, 233, 90);
     font-size: 16pt;
 }
+#slideshow{
+    width: 100%;
+}
+.slick{
+    margin-top: -20px;
+    height: 58px;
+    text-align: center;
+    font-size: 26pt;
+    color: rgb(89, 224, 107);
+}
 
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
     background:white;
-    width:100%;    
-    box-shadow: inset 0 0 100px 1px rgba(0, 0, 0, 0.1);
 }
 
 .banner{
-    height: 280px;
+    height: 230px;
     width:400px;
     margin-top:30px;
 }
 
 .textobanner {
     text-align: center;
-    font-size: 55pt;
+    font-size: 50pt;
     line-height: 45pt;
     color:rgb(0, 0, 0, 0.8);
 }
@@ -73,27 +84,19 @@ nav{
     font-size: 35pt;
     color:rgb(0, 0, 0, 0.8);
 }
-.botoes{
-    margin-top:30px;
-    max-height: 50px;
-    font-size: 40pt;
-}
+
 .botaobanner{
     color:  rgb(68, 226, 139);
+    font-size: 35pt;
+    font-weight: 900;
     padding:5px 10px;
     text-align: center;
-    transition: 0.5s;
     border-radius: 10px;
     background-image: linear-gradient(to bottom right, white, whitesmoke);
 }   
 
 .botaobanner:hover{
-    transition: 0.3s;
     font-size: 45pt;
-    color: white;
-    background-image: linear-gradient(to bottom right, rgb(68, 226, 139), rgb(21, 231, 49) );
-    text-shadow: 0px 0px 10px rgb(0, 0, 0, 0.1);
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
 }
 
 .about{
@@ -101,8 +104,51 @@ nav{
     align-items: center;
     flex-direction: column;
     margin:200px 0 0 0;
+}
+
+
+.how{
+    display:flex;
+    justify-content: space-evenly ;
+    width: 100%;
+    margin-top:150px;
+    background-image: linear-gradient(to bottom right, rgb(68, 226, 139), rgb(68, 233, 90) );
+}
+
+.howtext{
+    margin-top:100px;
+    text-align: center;
+    color:white;
+}
+.black {
+    color: rgb(0, 0, 0, 0.8);
+}
+
+.how-box{
+    display:flex;
+    justify-content: space-evenly ;
+    margin:100px 0 0 0;
     width: 100%;
 }
+
+.howtext > h1{
+    font-size: 62pt;
+    line-height: 45pt;
+}
+.howtext > h2 {
+    font-size: 16pt;
+    margin-top:30px;
+    color: rgb(0, 0, 0, 0.6);
+    line-height: 20pt;
+}
+.howtext > h3 {
+    font-size: 26pt;
+    font-weight: 600;
+    color: white;
+}
+
+
+
 
 .titleabout{
     font-size: 50pt;
@@ -139,7 +185,8 @@ nav{
 .card:hover{
     transition: 0.3s;
     height: 320px;
-    width: 120%;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+
 }
 
 .aboutimg{
@@ -148,46 +195,24 @@ nav{
 }
 
 .card > h3{
-    text-align: start;
-    font-size: 14pt;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 12pt;
     width: 150px;
 }
 
-.how{
-    display:flex;
-    justify-content: space-evenly ;
+footer{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
     width: 100%;
-    margin-top:150px;
-    background-image: linear-gradient(to bottom right, rgb(68, 226, 139), rgb(68, 233, 90) );
+    background: whitesmoke;
 }
 
-.howtext{
-    margin-top:100px;
-    text-align: center;
-    color:white;
+footer > a {
+    margin: 30px 0px 0px 0px;
+    color: rgb(0, 0, 0, 0.8)
 }
-.black {
-    color: rgb(0, 0, 0, 0.8);
-}
-
-.how-box{
-    display:flex;
-    justify-content: space-evenly ;
-    margin:100px;
-    width: 100%;
-}
-
-.howtext > h1{
-    font-size: 62pt;
-    line-height: 45pt;
-}
-.howtext > h2 {
-    margin-top:30px;
-    color: rgb(0, 0, 0, 0.6);
-    line-height: 20pt;
-}
-.howtext > h3 {
-    font-size: 26pt;
-    font-weight: 600;
-    color: white;
+footer > a:hover{
+    color: royalblue;
 }
