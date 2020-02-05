@@ -31,13 +31,13 @@
 
     <section  id="slideshow"> 
         <div class="slick">
-            <h1 style="color: rgb(68, 226, 139); font-weight: 900">reeConectar</h1>
-            <h1 style="color: cornflowerblue; font-weight: 900">reeUtilizar</h1>
-            <h1 style="color: crimson; font-weight: 900">reeUnir</h1>
-            <h1 style="color: gold; font-weight: 900">reeCiclar</h1>
-            <h1 style="color: greenyellow; font-weight: 900">reeUnir</h1>
-            <h1 style="color: hotpink; font-weight: 900;">reeEstruturar</h1>
-            <h1 style="color: mediumseagreen; font-weight: 900;">reeDistribuir</h1>
+            <h1 class="greenree" style="font-weight: 900">reeConectar</h1>
+            <h1 class="cornflowerblue" style="font-weight: 900">reeUtilizar</h1>
+            <h1 class="crimson" style="font-weight: 900">reeUnir</h1>
+            <h1 class="gold" style="font-weight: 900">reeCiclar</h1>
+            <h1 class="hotpink" style="font-weight: 900">reeUnir</h1>
+            <h1 class="greenyellow" style="font-weight: 900">reeEstruturar</h1>
+            <h1 class="purple" style="font-weight: 900">reeDistribuir</h1>
         </div>
     </section>
 
@@ -45,9 +45,10 @@
   
         <img  data-aos="fade-down" class="banner" src="./src/img/conexão.svg">
         <h1  data-aos="fade-down" class="textobanner"> A diferença está <br> nas suas mãos. </h1>
-        <a data-aos="fade-down" class="botaobanner" href="/"> Entenda! </a>
 
-        <section  class="how">
+        <button onclick="scrollToHow()" data-aos="fade-down" class="botaobanner"> Entenda! </button>
+
+        <section id="how"  class="how">
             <img data-aos="fade-right" class="banner" src="./src/img/troca.svg">
             <div data-aos="fade-left"class= "howtext">
                 <h1> Como funciona? </h1>
@@ -90,7 +91,10 @@
             <img class="banner" src="./src/img/troca 2.svg">
         </section>
 
-
+        <section class="Consci">
+            <img class="banner" src="./src/img/trip.svg"
+            <h1>O problema do Lixo Eletrônico</h1>
+        </section>
 
         <section class="about">
             <h1 class="titleabout">A equipe ree</h1>
@@ -134,7 +138,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
     
     <script src="./scripts/slickRee.js"></script>
-    
+    <script src="scripts/Scripts.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
     AOS.init();

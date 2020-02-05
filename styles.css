@@ -1,4 +1,4 @@
-
+/* HTML EM GERAL */
 ::-webkit-scrollbar {
     width: 10px;
   }
@@ -15,12 +15,58 @@
     background: rgb(168, 168, 168);
   }
 
-*{   
+  .cornflowerblue {
+    background: -webkit-linear-gradient(rgb(106, 150, 231), rgb(44, 104, 216));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.crimson{
+    background: -webkit-linear-gradient(#b11131, rgb(255, 20, 20));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gold{
+    background: -webkit-linear-gradient(gold, rgb(235, 168, 12));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.greenyellow{
+    background: -webkit-linear-gradient(greenyellow, rgb(136, 211, 24));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hotpink{
+    background: -webkit-linear-gradient(hotpink, rgb(255, 17, 136));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.purple{
+    background: -webkit-linear-gradient(rgb(179, 80, 218), rgb(168, 17, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.greenree{
+    background: -webkit-linear-gradient(rgb(68, 233, 90),rgb(39, 177, 58) );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+*{ 
+    transition: 0.3s;
+    outline: none;  
+    background: none;
+    box-shadow: none;
+    border: none;
     margin:0 auto;
     text-decoration: none;
     list-style: none;
     font-family: 'Catamaran', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+  }
 body{
     overflow-x: hidden;
 }
@@ -38,7 +84,6 @@ a{
     color: rgba(0, 0, 0, 0.8);
     margin: 0px 10px 0px 10px;
 }
-
 nav{
     height: 100%;
     display:flex;
@@ -52,6 +97,10 @@ nav{
     display: flex;
     flex-direction: column;
 }
+/* -------------------------------------------------------------------- */
+/* -------------------------- HEADER ---------------------------------- */
+
+
 .header{
     height: 55px;
 }
@@ -66,6 +115,14 @@ nav{
     color: rgb(68, 233, 90);
     font-size: 16pt;
 }
+
+
+
+/* -------------------------------------------------------------------------------
+---------------------------------CAROUSEL---------------------------------------- */
+
+
+
 #slideshow{
     width: 100%;
 }
@@ -73,10 +130,14 @@ nav{
     margin-top: -20px;
     height: 58px;
     text-align: center;
-    font-size: 26pt;
-    color: rgb(89, 224, 107);
+    font-size: 26pt;  
 }
 
+
+/* -----------------------------------------------------------------------------------
+-------------------------------------CONTAINER----------------------------------------- 
+
+-------------------------------------BANNER INICIAL-----------------------------------*/
 .container{
     overflow-x: hidden;
     display: flex;
@@ -105,26 +166,20 @@ nav{
 
 .botaobanner{
     color:  rgb(68, 226, 139);
+    z-index: 100;
     font-size: 35pt;
     font-weight: 900;
-    padding:5px 10px;
     text-align: center;
-    border-radius: 10px;
-    transition: 1s ease-in-out;
-}   
-
-.botaobanner:hover{
-    transition: 1s ease-in-out;
-    font-size: 45pt;
+    transition: 0.3s;
 }
 
-.about{
-    display:flex;
-    align-items: center;
-    flex-direction: column;
-    margin:200px 0 0 0;
-}
+/* ---------------------------------COMO FUNCIONA-------------------------------
+----------------------------------------BANNER---------------------------------- */
 
+.botaobanner :hover{
+    transition: 0.3s;
+    color:rgb(235, 54, 54);
+}
 
 .how{
     display:flex;
@@ -140,9 +195,12 @@ nav{
     text-align: center;
     color:white;
 }
+
 .black {
     color: rgb(0, 0, 0, 0.8);
 }
+/* -------------------------------------------COMO FUNCIONA - SEÇÕES --------------------------- */
+
 
 .how-box{
     display:flex;
@@ -168,7 +226,15 @@ nav{
 }
 
 
+/* -----------------------------------------SOBRE----------------------------------------- */
 
+
+.about{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    margin:200px 0 0 0;
+}
 
 .titleabout{
     font-size: 50pt;
