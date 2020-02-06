@@ -15,10 +15,7 @@
 <body>
     <header class="header">
         <nav>
-            <ul >
-                <a  class="logo" href="/">
-                    ree
-                </a>
+            <ul>
                 <a href="/">
                     Cadastro
                 </a>
@@ -29,25 +26,28 @@
         </nav>
     </header>
 <section  class="container">
-    
-    <section  id="slideshow"> 
-        <div class="slick">
-            <h1 class="greenree" style="font-weight: 900">reeConectar</h1>
-            <h1 class="cornflowerblue" style="font-weight: 900">reeUtilizar</h1>
-            <h1 class="crimson" style="font-weight: 900">reeUnir</h1>
-            <h1 class="gold" style="font-weight: 900">reeCiclar</h1>
-            <h1 class="hotpink" style="font-weight: 900">reeUnir</h1>
-            <h1 class="greenyellow" style="font-weight: 900">reeEstruturar</h1>
-            <h1 class="purple" style="font-weight: 900">reeDistribuir</h1>
-        </div>
-    </section>
 
-    
+    <div class="slide">
+        <h1 class="greenree">ree</h1>
+
+        <div  id="slideshow"> 
+            <div class="slick">
+                <h1 class="greenree" style="font-weight: 900">Conectar</h1>
+                <h1 class="cornflowerblue" style="font-weight: 900">Utilizar</h1>
+                <h1 class="crimson" style="font-weight: 900">Unir</h1>
+                <h1 class="gold" style="font-weight: 900">Ciclar</h1>
+                <h1 class="hotpink" style="font-weight: 900">Unir</h1>
+                <h1 class="greenyellow" style="font-weight: 900">Estruturar</h1>
+                <h1 class="purple" style="font-weight: 900">Distribuir</h1>
+            </div>
+        </div>
+    </div>            
   
         <img  data-aos="fade-down" class="banner" src="./src/img/conexão.svg">
         <h1  data-aos="fade-down" class="textobanner"> A diferença está <br> nas suas mãos. </h1>
 
-        <button onclick="scrollToHow()" data-aos="fade-down" class="botaobanner"> Entenda! </button>
+        <button onclick="scrollToHow()" class="botaobanner"> Entenda! </button>
+    </section>
 
         <section id="how"  class="how">
 
@@ -98,30 +98,52 @@
             <img class="banner" src="./src/img/troca 2.svg">
         </section>
 
-        <img class="banner" src="./src/img/montanhas.svg">
+        <img class="banner flex" src="./src/img/montanhas.svg">
 
         <section  class="pense">
-            <h1 class="greenree">...pense nisso:</h1>
-            <div class="cardspense">
+            <h1 data-aos="fade-up"class="greenree">...pense nisso:</h1>
+            <div data-aos="fade-up" class="cardspense">
                 <div class="cardp">
+
+                    <img class="bannerp"src="./src/img/heart-shape-silhouette.svg">
+
                     <h2 class="hotpink">Pessoas</h2>
-                    <h3> ajude pessoas etc</h3>
+                    <h3> Pessoas que possuem baixa 
+                        renda podem se cadastrar na 
+                        nossa plataforma para receber 
+                        um aparelho tecnologico de doação</h3>
                 </div>
 
                 <div class="cardp">
+
+                    <img class="bannerp" src="./src/img/pencil.svg">
+
                     <h2 class="cornflowerblue">Instituições</h2>
-                    <h3> contribua com Instituições etc</h3>
+                    <h3> Existem muitas unidades de ensino 
+                        precisando de aparelhos eletronicos,
+                        para ensinar a consertar</h3>
                 </div>
 
                 <div class="cardp">
+
+                    <img class="bannerp" src="./src/img/book.svg">
+                    
                     <h2 class="gold">Ensino</h2>
-                    <h3> ajude no ensino tecno etc</h3>
+
+                    <h3> ajude no ensino tecnológico,
+                        envie hardware que pode ser utilizado
+                        em aulas.
+                    </h3>
                 </div>
             </div>
         </section>
 
+        <section data-aos="fade-up" class="howcad">
 
-            
+            <button class="Cadastro"> faça parte </button>
+
+        </section>
+
         <section data-aos="fade-down" class="Consci">
         <h1 data-aos="fade-down" class="greenree">O problema do Lixo Eletrônico</h1>
         <div  class="flex">
@@ -147,6 +169,29 @@
         <section class="about">
 
             <h1 class="titleabout">A equipe ree</h1>
+
+            <div class="how">
+                <div class="howtext">
+                    <h1> Nosso contato direto</h1>
+
+                    <h3 style="font-size: 20pt;">Pronto para ajudar pessoas? Ligue para nós ou envie um e-mail<br> e entraremos em 
+                     contato com você o mais breve possível!</h3>
+
+                    <div class="flex">
+
+                        <div class="column">
+                            <img class="bannerp" src="./src/img/telephone-symbol-button.svg">
+                            <a class="contato">+55 (21) 91111-2222 </a>
+                        </div>
+                        
+                        <div class="column">
+                            <img class="bannerp"src="./src/img/envelope.svg">
+                            <a class="contato">contato@ree.com </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
             <div class="abouttext">
                 <div class="card">
                     <h1>Bruno</h1>
