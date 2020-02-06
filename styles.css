@@ -166,16 +166,15 @@ h1,h2,h3,h4{
     color:rgb(0, 0, 0, 0.8);
 }
 
-.botaobanner{
+button{
     color:  rgb(68, 226, 139);
-    z-index: 100;
     font-size: 35pt;
     font-weight: 900;
     text-align: center;
     transition: 0.3s;
 }
-.botaobanner:hover{
-    transition: 0.3s;
+button:hover{
+    transition: 0.4s;
     color:rgb(43, 195, 55);
 }
 
@@ -227,6 +226,38 @@ h1,h2,h3,h4{
     font-weight: 600;
     color: white;
 }
+/* --------------------------------------------INSTITUIÇOES ETC----------------------------- */
+
+
+.pense{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.pense > h1{
+    margin-top: 100px;
+    font-size: 35pt;
+}
+
+.cardspense{
+    display: flex;
+    width: 80%;
+}
+.cardp{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+    margin:60px 15px 0 15px;
+    height: 300px;
+    width:100%;
+    background: white;
+    font-weight: 400;
+    color:rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+
 /* -----------------------------------------PROBLEMA DO LIXO-------------------------------- */
 
 
@@ -331,8 +362,14 @@ footer > a:hover{
     .banner{
         width: 290px ;
     }
+    .how{
+        flex-wrap: wrap;
+    }
     .how-box{
         flex-wrap: wrap;
+    }
+    .howtext{
+        margin-top: -20px;
     }
     .howtext > h1{
         font-size: 38pt;
@@ -340,4 +377,40 @@ footer > a:hover{
     .howtext > h2{
         font-size: 15pt;
     }
+    .cardspense{
+        flex-wrap: wrap;
+    }
+
+    .consci > h1 {
+        font-size: 22pt;
+        text-align: center;
+    }
+    .consci > div > div > h2 {
+        font-size: 15pt;
+        text-align: center;
+    }
+    .consci > div > div > p {
+        font-size: 11pt;
+        margin: 10px 20px 10px 20px;
+    }
+    .consci > div{
+        flex-wrap: wrap;
+    }
+    .titleabout{
+        font-size: 30pt;
+    }
+    .abouttext{
+        flex-wrap: wrap;
+        max-width: 100px;
+    }
+    .aboutimg{
+        height: 60px;
+        width: 60px;
+    }
+    .card{
+
+    }
+    
+
+
 }
